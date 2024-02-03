@@ -11,9 +11,9 @@ mkdir -p "${BIN_DIR}"
 set -x
 
 LD_FLAGS="\
--X github.com/alexditu/ag-csv-table-generator/version.commitHash=$(git rev-parse --short HEAD) \
--X github.com/alexditu/ag-csv-table-generator/version.branchName=$(git rev-parse --abbrev-ref HEAD) \
--X github.com/alexditu/ag-csv-table-generator/version.binaryName=${BIN_NAME}"
+-X github.com/alexditu/go-utils/pkg/version.commitHash=$(git rev-parse --short HEAD) \
+-X github.com/alexditu/go-utils/pkg/version.branchName=$(git rev-parse --abbrev-ref HEAD) \
+-X github.com/alexditu/go-utils/pkg/version.binaryName=${BIN_NAME}"
 
 GOARCH=amd64 GOOS=linux \
 go build -x -o "${BIN_DIR}/${BIN_NAME}" \

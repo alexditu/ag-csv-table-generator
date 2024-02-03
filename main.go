@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/alexditu/ag-csv-table-generator/version"
+	"github.com/alexditu/go-utils/pkg/version"
 )
 
 type Proprietar struct {
