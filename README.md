@@ -9,4 +9,6 @@ The scripts checks which owners are members in the Association and groups their 
 Run `/build.sh` script. The executable will be generated in binary/ folder.
 
 ## Run
+```
 ./binary/gen-ag-table <input csv>
+```
